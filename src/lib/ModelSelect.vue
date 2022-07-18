@@ -42,6 +42,7 @@
         :key="idx"
         class="item"
         :class="{ 'selected': option.selected || pointer === idx }"
+        :style="{ fontFamily: option.text }"
         :data-vss-custom-attr="customAttrs[idx] ? customAttrs[idx] : ''"
         @click.stop="selectItem(option)"
         @mousedown="mousedownItem"
